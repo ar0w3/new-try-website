@@ -1,0 +1,149 @@
+/* ===== Global Styles ===== */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #fff5f7;
+  color: #333;
+}
+
+/* ===== Header ===== */
+header {
+  background: linear-gradient(135deg, #f8cdda 0%, #fbd3e9 100%);
+  color: #333;
+  text-align: center;
+  padding: 2.5rem 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  background-image: url('images/crafting-banner.jpg');
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 600;
+  padding: 0.5rem 0.8rem;
+  border-radius: 8px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+  background: rgba(255,255,255,0.6);
+  color: #b71c5c;
+}
+
+/* ===== Sections ===== */
+section {
+  padding: 3rem 1.5rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+section h2 {
+  color: #d81b60;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+#testimonial {
+  background: #ffe6ef url('images/craft-tools.png') no-repeat right bottom;
+  background-size: 150px;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  font-style: italic;
+}
+
+/* ===== Contact Section ===== */
+#contact {
+  background: #ffe6ef;
+  border-radius: 12px;
+  padding: 2.5rem 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  max-width: 800px;
+  margin: 3rem auto;
+}
+
+#contact h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: #d81b60;
+}
+
+#form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#form-container iframe {
+  width: 100% !important;
+  max-width: 700px;
+  border: none;
+}
+
+/* ===== Footer ===== */
+footer {
+  background: linear-gradient(135deg, #fbd3e9 0%, #f8cdda 100%);
+  text-align: center;
+  padding: 1rem;
+  color: #333;
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+/* ===== Buttons ===== */
+button {
+  background: #f48fb1;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #ec407a;
+  transform: translateY(-2px);
+}
+
+/* ===== Responsive Adjustments ===== */
+@media (max-width: 600px) {
+  section {
+    padding: 2rem 1rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  #contact {
+    padding: 2rem 1rem;
+  }
+}
